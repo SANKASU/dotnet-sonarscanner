@@ -24,8 +24,8 @@ in `.dotnet/tools` folder.
 
 Tags        | Dockerfile                   | .NET Core SDK | OS Version
 ----------- | ---------------------------- | ------------- | -------------
-2.2, latest | [Dockerfile](2.2/Dockerfile) | `2.2.401`     | Alpine 3.9
-2.1         | [Dockerfile](2.1/Dockerfile) | `2.1.801`     | Alpine 3.9
+2.2, latest | [Dockerfile](https://github.com/xajler/dotnet-sonarscanner/blob/master/2.2/Dockerfile) | `2.2.401`     | Alpine 3.9
+2.1         | [Dockerfile](https://github.com/xajler/dotnet-sonarscanner/blob/master/2.1/Dockerfile) | `2.1.801`     | Alpine 3.9
 
 
 # Basic usage
