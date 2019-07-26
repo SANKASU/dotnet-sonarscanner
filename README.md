@@ -10,13 +10,13 @@
 Docker container is based of [Alpine linux](https://www.alpinelinux.org) image to be as small as possible. Beware _Alpine_ linux is not having `bash`
 installed by default, but `sh`, if there is need to open container interactively.
 
-Main image is official [OpenJDK](https://hub.docker.com/_/openjdk) 8u212-jre-alpine3.9 since there was issues installing Java to
+Main image is official [OpenJDK](https://hub.docker.com/_/openjdk) `8u212-jre-alpine3.9` since there was issues installing Java to
 .NET Core SDK official Docker image (tried Debian, Alpine and Ubuntu).
 OpenJRE 8 is minimal requirement to run SonarScanner analysis.
 
 To OpenJDK image is added install of .NET Core Runtime deps merged with .NET Core SDK with set `DOTNET_CLI_TELEMETRY_OPTOUT=true`, just in case.
 
-Added install as tool globally [dotnet-sonarscanner](https://github.com/SonarSource/sonar-scanner-msbuild) version `4.6.2` and set `PATH` to find it
+Added install for [dotnet-sonarscanner](https://github.com/SonarSource/sonar-scanner-msbuild) version `4.6.2` as global dotnet tool and set `PATH` to find it
 in `.dotnet/tools` folder.
 
 
